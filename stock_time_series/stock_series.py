@@ -74,7 +74,6 @@ class StockTimeSeries:
         resp = self._make_request(url)
 
     def monthly_adjusted_series(self, function, symbol, **kwargs):
-
         path = self._build_path(function, symbol, **kwargs)
 
         url = self._build_url(path)
@@ -82,7 +81,6 @@ class StockTimeSeries:
         resp = self._make_request(url)
 
     def quote_series(self, function, symbol, **kwargs):
-
         path = self._build_path(function, symbol, **kwargs)
 
         url = self._build_url(path)
